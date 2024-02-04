@@ -1,4 +1,4 @@
-import styles from './Profile.module.css';
+import styles from './StatsItem.module.css';
 
 const StatsItem = ({ label, value }) => {
   return (

@@ -66,13 +66,3 @@
 .stats li:last-child {
   border-right: none;
 }
-
-.label {
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.value {
-  font-size: 24px;
-  font-weight: 700;
-}
