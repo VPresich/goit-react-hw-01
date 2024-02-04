@@ -4,13 +4,7 @@ import styles from './FriendsListItem.module.css';
 const FriendsListItem = ({ avatar, name, isOnline }) => {
   return (
     <div className={styles.item}>
-      <img
-        className={styles.avatar}
-        src={avatar}
-        alt="Avatar"
-        width="100"
-        height="100"
-      />
+      <img className={styles.avatar} src={avatar} alt="Avatar" width="48" />
       <p className={styles.name}>{name}</p>
       <p
         className={`${styles.status} ${
