@@ -7,35 +7,36 @@
   margin-bottom: 20px;
 }
 
-.friends-list .item {
+.item {
   display: flex;
   flex-direction: column;
+  align-items: center;
   row-gap: 8px;
   border: 2px solid var(--secondary-color);
   border-radius: 16px;
   padding: 16px;
 }
 
-.friends-list .avatar {
+.avatar {
   width: 100px;
   height: 100px;
 }
 
-.friends-list .name {
+.name {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.5;
 }
 
-.friends-list .status {
+.status {
   font-size: 16px;
   font-weight: 600;
 }
 
-.friends-list .online {
+.online {
   color: var(--status-online-color);
 }
 
-.friends-list .offline {
+.offline {
   color: var(--status-offline-color);
 }

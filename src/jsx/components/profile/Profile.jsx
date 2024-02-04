@@ -1,19 +1,19 @@
 import PropTypes from 'prop-types';
-import './Profile.css';
+import styles from './Profile.module.css';
 import StatsItem from './StatsItem';
 
 const Profile = ({ name, tag, location, image, stats }) => {
   const statsData = Object.entries(stats);
 
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={image} alt="User avatar" className="avatar" />
-        <p className="name">{name}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+    <div className={styles.profile}>
+      <div className={styles.description}>
+        <img src={image} alt="User avatar" className={styles.avatar} />
+        <p className={styles.name}>{name}</p>
+        <p className={styles.tag}>@{tag}</p>
+        <p className={styles.location}>{location}</p>
       </div>
-      <ul className="stats">
+      <ul className={styles.stats}>
         {statsData.map(([label, value], index) => (
           <StatsItem key={index} label={label} value={value} />
         ))}

@@ -1,4 +1,3 @@
-import './App.css';
 import userData from './profile/userdata.json';
 import friends from './friends-list/friends.json';
 import transactions from './transactions-history/transactions.json';
