@@ -1,15 +1,15 @@
-import userData from './profile/userdata.json';
-import friends from './friends-list/friends.json';
-import transactions from './transactions-history/transactions.json';
+import userData from '../../data/userdata.json';
+import friends from '../../data/friends.json';
+import transactions from '../../data/transactions.json';
 
-import Profile from './profile/Profile';
-import FriendsList from './friends-list/FriendsList';
-import TransactionsHistory from './transactions-history/TransactionsHistory';
+import { Profile } from './profile/Profile';
+import { FriendList } from './friends/FriendList';
+import { TransactionHistory } from './transactions/TransactionHistory';
 
 export default function App() {
   const { username, tag, location, avatar, stats } = userData;
   return (
-    <div>
+    <div className="container">
       <Profile
         name={username}
         tag={tag}
@@ -17,8 +17,8 @@ export default function App() {
         image={avatar}
         stats={stats}
       />
-      <FriendsList friends={friends} />
-      <TransactionsHistory items={transactions} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 }
